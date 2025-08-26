@@ -69,6 +69,95 @@ p.intro {
   text-decoration: underline;
 }
 
+/* Tables for rules */
+.table-wrap {
+  overflow-x: auto;
+  margin-bottom: 2rem;
+}
+
+.rules-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #111;
+}
+
+.rules-table th,
+.rules-table td {
+  padding: 0.75rem;
+  border-bottom: 1px solid #2a2a2a;
+  text-align: left;
+}
+
+.rules-table thead th {
+  font-family: "Cinzel", serif;
+  color: #ffcf65;
+  border-bottom: 2px solid #3a3a3a;
+}
+
+.rules-table tbody tr:nth-child(even) {
+  background: #0f0f0f;
+}
+
+.rules-table tbody tr:hover {
+  background: #151515;
+}
+
+/* A11y helper for captions */
+.visually-hidden {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+}
+
+/* Uniform column widths */
+.rules-table {
+  table-layout: fixed; /* enforce percentage-based widths uniformly */
+}
+
+/* 1) Action | 2) Drink | 3) Other notes */
+.rules-table th:nth-child(1),
+.rules-table td:nth-child(1) {
+  width: 55%;
+}
+
+.rules-table th:nth-child(2),
+.rules-table td:nth-child(2) {
+  width: 15%;
+  text-align: center;
+}
+
+.rules-table th:nth-child(3),
+.rules-table td:nth-child(3) {
+  width: 30%;
+}
+
+/* Ensure long content wraps cleanly */
+.rules-table td {
+  word-break: break-word;
+  hyphens: auto;
+}
+
+/* Small screens: give Action a touch more space to reduce wrapping */
+@media (max-width: 520px) {
+  .rules-table th:nth-child(1),
+  .rules-table td:nth-child(1) {
+    width: 50%;
+  }
+
+  .rules-table th:nth-child(2),
+  .rules-table td:nth-child(2) {
+    width: 15%;
+  }
+
+  .rules-table th:nth-child(3),
+  .rules-table td:nth-child(3) {
+    width: 35%;
+  }
+}
+
 /* Disable fixed background on small screens to avoid scroll jank */
 @media (max-width: 768px) {
   body {

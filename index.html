@@ -59,44 +59,177 @@
         </ul>
 
         <h2>Basic Rules</h2>
-        <h3>Death Rules</h3>
-        <ul>
-            <li><strong>Die to a Boss:</strong> Take 1 drink and pass the controller.</li>
-            <li><strong>Die to a Regular Enemy:</strong> Take 1 drink and pass the controller.</li>
-            <li><strong>Die from Environment (Falling, Traps, Poison/Toxic):</strong> Take 2 drinks and pass the controller.</li>
-        </ul>
 
-        <h3>Bonfire Rules</h3>
-        <ul>
-            <li><strong>Light a New Bonfire:</strong> Everyone takes 1 drink.</li>
-            <li><strong>Kindle a Bonfire:</strong> Take 1 drink.</li>
-            <li><strong>Rest at a Bonfire:</strong> Take 1 drink for every unused Estus Flask. You must pass the controller after you finish any business in the Bonfire menu. (leveling up, etc.)</li>
-        </ul>
+        <h3 id="death-rules">Death Rules</h3>
+        <div class="table-wrap">
+            <table class="rules-table" aria-labelledby="death-rules">
+                <caption class="visually-hidden">Death Rules — Action, Drink, and other notes</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Action</th>
+                        <th scope="col">Drink</th>
+                        <th scope="col">Other notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Die to a Boss</td>
+                        <td>1 drink</td>
+                        <td>Pass the controller</td>
+                    </tr>
+                    <tr>
+                        <td>Die to a Regular Enemy</td>
+                        <td>1 drink</td>
+                        <td>Pass the controller</td>
+                    </tr>
+                    <tr>
+                        <td>Die from Environment (Falling, Traps, Poison/Toxic)</td>
+                        <td>2 drinks</td>
+                        <td>Pass the controller</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
-        <h3>Item/Action Rules</h3>
-        <ul>
-            <li><strong>Use an Estus Flask:</strong> Take 1 drink.</li>
-            <li><strong>Summon Help (NPC or Player):</strong> Take 1 drink.</li>
-            <li><strong>Use a Humanity/Hollowing Item:</strong> Take 1 drink.</li>
-        </ul>
+        <h3 id="bonfire-rules">Bonfire Rules</h3>
+        <div class="table-wrap">
+            <table class="rules-table" aria-labelledby="bonfire-rules">
+                <caption class="visually-hidden">Bonfire Rules — Action, Drink, and other notes</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Action</th>
+                        <th scope="col">Drink</th>
+                        <th scope="col">Other notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Light a New Bonfire</td>
+                        <td>1 drink</td>
+                        <td>Everyone drinks; Rest at bonfire or pass the controller</td>
+                    </tr>
+                    <tr>
+                        <td>Rest at a Bonfire</td>
+                        <td>1 drink</td>
+                        <td>Pass the controller after finishing Bonfire menu actions</td>
+                    </tr>
+                    <tr>
+                        <td>Kindle a Bonfire</td>
+                        <td>1 drink</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
-        <h3>Boss Rules</h3>
-        <ul>
-            <li><strong>Defeat a Boss:</strong> Everyone else takes 1 big drink.</li>
-        </ul>
+        <h3 id="item-action-rules">Item/Action Rules</h3>
+        <div class="table-wrap">
+            <table class="rules-table" aria-labelledby="item-action-rules">
+                <caption class="visually-hidden">Item/Action Rules — Action, Drink, and other notes</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Action</th>
+                        <th scope="col">Drink</th>
+                        <th scope="col">Other notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Use an Estus Flask</td>
+                        <td>1 drink</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Summon Help (NPC or Player)</td>
+                        <td>1 drink</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Use a Humanity/Hollowing Item</td>
+                        <td>1 drink</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
-        <h3>Special Rules</h3>
-        <ul>
-            <li><strong>Find a Hidden Wall or Secret:</strong> Make another player take 1 drink.</li>
-            <li><strong>Get Cursed:</strong> Take 1 big drink.</li>
-            <li><strong>Lose Souls (by dying again before retrieving):</strong> Take 1 drink, and the player that died before also takes 1 drink.</li>
-            <li><strong>Discover a New Area:</strong> Everyone takes 1 drink.</li>
-        </ul>
+        <h3 id="boss-rules">Boss Rules</h3>
+        <div class="table-wrap">
+            <table class="rules-table" aria-labelledby="boss-rules">
+                <caption class="visually-hidden">Boss Rules — Action, Drink, and other notes</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Action</th>
+                        <th scope="col">Drink</th>
+                        <th scope="col">Other notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Defeat a Boss</td>
+                        <td>1 big drink</td>
+                        <td>Everyone else drinks</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
-        <h3>Challenge Rules</h3>
-        <ul>
-            <li><strong>No Hit Challenge (Complete a Level or Boss Without Taking Damage):</strong> If successful, everyone else takes 1 big drink; if not, take 1 big drink.</li>
-        </ul>
+        <h3 id="special-rules">Special Rules</h3>
+        <div class="table-wrap">
+            <table class="rules-table" aria-labelledby="special-rules">
+                <caption class="visually-hidden">Special Rules — Action, Drink, and other notes</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Action</th>
+                        <th scope="col">Drink</th>
+                        <th scope="col">Other notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Find a Hidden Wall or Secret</td>
+                        <td>1 drink</td>
+                        <td>Choose another player to drink</td>
+                    </tr>
+                    <tr>
+                        <td>Get Cursed</td>
+                        <td>1 big drink</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Lose Souls (by dying again before retrieving)</td>
+                        <td>1 drink</td>
+                        <td>Both you and the previous player drink</td>
+                    </tr>
+                    <tr>
+                        <td>Discover a New Area</td>
+                        <td>1 drink</td>
+                        <td>Everyone drinks</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h3 id="challenge-rules">Challenge Rules</h3>
+        <div class="table-wrap">
+            <table class="rules-table" aria-labelledby="challenge-rules">
+                <caption class="visually-hidden">Challenge Rules — Action, Drink, and other notes</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Action</th>
+                        <th scope="col">Drink</th>
+                        <th scope="col">Other notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>No Hit Challenge (Complete a Level or Boss Without Taking Damage)</td>
+                        <td>1 big drink</td>
+                        <td>Success: everyone else drinks; Failure: you drink</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
         <img src="assets/drunk-souls-3.webp" alt="Dark Souls themed scene" width="1792" height="1024" loading="lazy" decoding="async" />
 
