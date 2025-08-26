@@ -1,32 +1,24 @@
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   background-color: #1c1c1c;
   color: #fdfdde;
   line-height: 1.6;
   margin: 0;
   padding: 20px;
-  background-image: url('assets/drunk-souls-4.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  /* Layered background: translucent dark overlay + hero image */
+  background: linear-gradient(#0a0a0acc, #0a0a0acc),
+    url("assets/drunk-souls-4.webp") center/cover no-repeat fixed;
 }
 
-h1, h2, h3 {
-  font-family: 'Cinzel', serif;
+h1,
+h2,
+h3 {
+  font-family: "Cinzel", serif;
   color: #ffcf65;
   margin-top: 2rem;
 }
 
-.overlay {
-  width: 100vw;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  position: fixed;
-  z-index: -1;
-  background-color: #0a0a0acc;
-}
+/* Removed .overlay (no longer used) */
 
 .container {
   max-width: 800px;
@@ -49,6 +41,8 @@ li {
 
 img {
   width: 100%;
+  height: auto;
+  display: block;
 }
 
 p.intro {
@@ -73,4 +67,11 @@ p.intro {
 
 .footer a:hover {
   text-decoration: underline;
+}
+
+/* Disable fixed background on small screens to avoid scroll jank */
+@media (max-width: 768px) {
+  body {
+    background-attachment: scroll;
+  }
 }
